@@ -1,0 +1,165 @@
+You are a senior mobile app developer and system architect.
+
+Build a modern cross-platform mobile application named **AIMEDCARE**.
+AIMEDCARE is an AI-powered healthcare assistant mobile app that helps users with medical information, health tools, and an AI chatbot.
+
+TECH STACK
+Use the best scalable stack:
+
+* React Native with Expo for the mobile app
+* Node.js + Express backend
+* MongoDB database
+* JWT authentication
+* Modern responsive UI
+
+APP FLOW
+
+1. AUTHENTICATION
+   When the app opens, the user must authenticate.
+
+Create:
+
+* Register screen
+* Login screen
+* Email and password authentication
+* Secure password validation
+* JWT session handling
+* Logout functionality
+
+After successful login, redirect the user to the **Main Dashboard**.
+
+MAIN DASHBOARD
+
+The dashboard should show all major healthcare features in a clean grid layout.
+
+Features available from the dashboard:
+
+1. AI Healthcare Chatbot
+2. Personalized Diet & Nutrition Plan
+3. Medical Report Analysis
+4. Doctor & Hospital Recommendation
+5. Medicine Information
+6. Prescription Reminder
+7. Stress, Depression & Sleep Assessment
+8. Health Risk Calculator
+
+Add a **floating chatbot button** visible on all screens.
+
+CHATBOT INTEGRATION
+
+The chatbot is already created using **Botpress**.
+
+Integrate the chatbot using the following script inside the chatbot screen or webview.
+
+<script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+
+<script src="https://files.bpcontent.cloud/2026/03/08/08/20260308080044-UVZ9TSBA.js" defer></script>
+
+Requirements:
+
+* Open chatbot in a dedicated Chat Screen
+* Also allow access via floating chat button
+* Maintain chat experience smoothly inside the app
+* Use WebView if necessary
+
+FEATURE DETAILS
+
+PERSONALIZED DIET & NUTRITION
+User inputs:
+
+* age
+* height
+* weight
+* activity level
+* health conditions
+
+System calculates:
+
+* BMI
+* calorie needs
+* nutrition suggestions
+
+MEDICAL REPORT ANALYSIS
+Allow user to:
+
+* upload PDF or image reports
+* show extracted values
+* give simplified explanation
+
+DOCTOR & HOSPITAL RECOMMENDATION
+Users can search doctors by:
+
+* specialization
+* location
+* ratings
+
+MEDICINE INFORMATION
+Search medicines and display:
+
+* uses
+* dosage
+* precautions
+* side effects
+
+PRESCRIPTION REMINDER
+Allow users to:
+
+* add medicines
+* set dosage times
+* receive notification reminders
+
+MENTAL HEALTH ASSESSMENT
+Include questionnaires for:
+
+* stress
+* depression
+* sleep quality
+
+Provide simple suggestions based on score.
+
+HEALTH RISK CALCULATOR
+Calculate risk for:
+
+* diabetes
+* heart disease
+* obesity
+
+Use user health metrics to calculate risk level.
+
+UI / UX REQUIREMENTS
+
+* Clean medical themed UI
+* Color theme: white, teal, light blue
+* Smooth navigation
+* Bottom navigation bar
+* Dashboard cards
+* Floating chatbot button
+* Modern mobile UI
+
+DATABASE MODELS
+
+Create models for:
+
+* users
+* health data
+* prescriptions
+* reminders
+* assessments
+
+SECURITY
+
+* Encrypt sensitive data
+* Protect API routes
+* Validate user input
+
+DEVELOPMENT PROCESS
+
+1. First create project structure
+2. Implement authentication
+3. Build dashboard UI
+4. Integrate Botpress chatbot
+5. Implement remaining healthcare features
+
+Before implementing advanced features, ask for confirmation.
+
+Generate clean, modular, well-commented code and explain how to run the project.
