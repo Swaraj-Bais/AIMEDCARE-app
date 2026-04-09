@@ -119,11 +119,17 @@ export default function DashboardScreen() {
   const topPad = Platform.OS === "web" ? 67 : insets.top;
   const bottomPad = Platform.OS === "web" ? 34 : 0;
 
+  // ✅ FIXED GREETING FUNCTION
   const greeting = () => {
-    const h = new Date().getHours();
-    if (h < 12) return "Good morning";
-    if (h < 17) return "Good afternoon";
-    return "Good evening";
+    const now = new Date();
+
+    // Ensure local time (important for Expo Web)
+    const hours = now.getHours();
+
+    if (hours >= 5 && hours < 12) return "Good morning";
+    if (hours >= 12 && hours < 17) return "Good afternoon";
+    if (hours >= 17 && hours < 24) return "Good evening";
+    return "Working late?";
   };
 
   const handleFeature = (route: string) => {
